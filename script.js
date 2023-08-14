@@ -9,7 +9,7 @@ console.log(lerItem)
 let array = [1,2,3,4,5,6,7,8]
 localStorage.setItem("lista", array) */
 
-localStorage.clear();
+//localStorage.clear();
 
 let listaDados = [];
 function Campos(campo1, campo2){ // construtor tem que começar com >letra maiuscula<
@@ -28,5 +28,8 @@ btnEnviar.addEventListener('click', ()=>{
 
     localStorage.setItem('Dados', JSON.stringify(listaDados))
 
+    console.log(listaDados)
 })
+
+localStorage.clear();
 
